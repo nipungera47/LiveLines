@@ -2,12 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import CryptoContext from "./cryptoContext";
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
+
+  <CryptoContext>
     <App />
-  </React.StrictMode>,
+    </CryptoContext>,
+  // </React.StrictMode>,
   document.getElementById('root')
 );
 
